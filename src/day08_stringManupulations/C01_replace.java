@@ -10,6 +10,9 @@ public class C01_replace {
         System.out.println(str.replace("Java", "Tava")); // Tava candir
 
         System.out.println(str.replace("Java", "X")); // X candir
+        System.out.println("=====");
+        System.out.println(str.replace('a','e'));
+        System.out.println(str.replace("Java","Hava"));
 
         System.out.println(str.replace("x", "y")); // Java candir
 

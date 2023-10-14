@@ -6,11 +6,6 @@ public class C04_replaceAll {
     public static void main(String[] args) {
 
 
-        // Kullanicidan isim soyisim ve kart numarasini alip
-        // asagidaki sekilde yazdirin
-        // Isim soyisim  : S***** G****
-        // Kart No : 1234 **** **** ****
-
         Scanner scanner = new Scanner(System.in);
         System.out.println("Isminizi giriniz");
         String isim = scanner.next();
