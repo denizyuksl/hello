@@ -62,5 +62,6 @@ public class C01_StringBuilder {
 
             sb.replace(0,4,"Hava");
             System.out.println(sb); // Hava Candir
+
     }
 }

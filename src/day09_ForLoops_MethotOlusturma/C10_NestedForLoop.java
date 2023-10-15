@@ -16,6 +16,7 @@ public class C10_NestedForLoop {
             * * * *
          */
 
+      /*
         Scanner scanner = new Scanner(System.in);
         System.out.println("Satir sayisini giriniz");
         int satir= scanner.nextInt();
@@ -27,7 +28,7 @@ public class C10_NestedForLoop {
             }
             System.out.println("");
         }
-
+*/
     }
 
 

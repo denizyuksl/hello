@@ -2,7 +2,7 @@ package day09_ForLoops_MethotOlusturma;
 
 import java.util.Scanner;
 
-public class C01_Faktoriyel {
+public class  C01_Faktoriyel {
     public static void main(String[] args) {
 
         // Soru 5- Kullanicidan 20’den kucuk bir sayi alip,

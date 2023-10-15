@@ -9,6 +9,7 @@ public class C04_RakamlarToplamı {
         //Soru 7- Kullanicidan pozitif bir tamsayi alip,
         //        rakamlar toplamini yazdirin.
 
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Lutfen pozitif bir tamsayi giriniz");
         int girilenSayi = scanner.nextInt();

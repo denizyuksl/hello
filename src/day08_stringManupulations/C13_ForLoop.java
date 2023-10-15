@@ -9,6 +9,7 @@ public class C13_ForLoop {
         //        sinirlar dahil olarak aralarindaki tum sayilarin toplamini yazdirin.
         //        Bitis degeri baslangic degerinden kucuk olsa da program calissin
 
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Baslangic degeri giriniz");
         int bas = scanner.nextInt();

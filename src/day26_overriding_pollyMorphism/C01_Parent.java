@@ -12,7 +12,8 @@ public class C01_Parent {
 
 
     public final void method3() {
-
+  // son hali demektir
+   // kimse bu metodu değiştirmesin demektir
     }
 
     public static void method4() {

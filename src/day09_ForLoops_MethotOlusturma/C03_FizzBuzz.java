@@ -12,6 +12,11 @@ public class C03_FizzBuzz {
         //	- 5 ile bolunebilen bir sayiya gelirse sayi yerine buzz
         //	- hem 3 hem 5 ile bolunebilen bir sayiya gelirse sayi yerine fizzBuzz yazdirin
 
+
+
+
+
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Lutfen pozitif bir tamsayi giriniz");
         int sayi = scanner.nextInt();
@@ -27,8 +32,10 @@ public class C03_FizzBuzz {
             }else{
                 System.out.print(i + " ");
             }
+
+
         }
     }
 
-
 }
+

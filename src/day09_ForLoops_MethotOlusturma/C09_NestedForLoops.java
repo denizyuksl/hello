@@ -27,7 +27,9 @@ public class C09_NestedForLoops {
         for (int i = 1; i <= satir ; i++) { // satir
 
             for (int j = 1; j <= i ; j++) { // her satirda satir numarasi kadar sutun oldugu icin
-                System.out.print(j + " ");
+                System.out.print(j+ " ");
+
+
             }
             System.out.println("");
         }
