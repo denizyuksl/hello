@@ -13,7 +13,7 @@ public interface I01_InterfacesIstisnaiDurum {
         Java8 ile birlikte bir ISTISNA getirilmistir
 
         interface'de olusturulan tum method'lar
-        public ve abstract'tir
+        PUBLIC ve ABSTRACT'tir
         dolayisiyla method body'si kabul etmez
         abstract method'lar child class'lar tarafindan override edilmek ZORUNDADIR
 

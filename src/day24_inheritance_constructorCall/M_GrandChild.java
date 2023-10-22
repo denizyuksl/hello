@@ -58,7 +58,7 @@ public class M_GrandChild extends K_Child {
 
     public static void main(String[] args) {
         /*
-            Java bir variable'in degerini ulmak icin
+            Java bir variable'in degerini bulmak icin
             sirasiyla
             1- icinde oldugumuz scope
             2- icinde oldugumuz class'in class level

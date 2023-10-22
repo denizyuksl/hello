@@ -5,7 +5,7 @@ import day27_abstractClasses_interface.I08_Interface;
 import java.util.ArrayList;
 import java.util.List;
 
-public class C01_ChildOfInterfaces implements I01_InterfacesIstisnaiDurum {
+public class C01_ChildOfInterfaces implements I01_InterfacesIstisnaiDurum{
 
 
     @Override
