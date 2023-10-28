@@ -192,7 +192,7 @@ public class MapMethodDepo {
         ) {
             // Value'daki bilgileri kullanabilmek icin array'e cevirelim
             // [Ali, Cem, 11, K, TM]
-            valueArr = ogrenciMap.get(each).split("-");
+            valueArr =ogrenciMap.get(each).split("-");
 
             // array[3]'e bakip istenen eskiSube degerine esit ise
             // yeni sube olarak update edelim  [Ali, Cem, 11, C, TM]

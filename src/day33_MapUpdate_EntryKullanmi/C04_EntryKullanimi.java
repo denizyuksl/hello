@@ -11,7 +11,7 @@ public class C04_EntryKullanimi {
 
         Map<Integer,String > ogrenciMap = MapMethodDepo.okulMapDondur();
 
-        Set<Map.Entry<Integer,String>> entrySeti = ogrenciMap.entrySet();
+        Set<Map.Entry<Integer,String>>entrySeti=ogrenciMap.entrySet();
 
         System.out.println("Entry seti : " + entrySeti);
         //  [
