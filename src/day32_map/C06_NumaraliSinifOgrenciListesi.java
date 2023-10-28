@@ -16,6 +16,6 @@ public class C06_NumaraliSinifOgrenciListesi {
         // o key'e ait value'yu inceleriz
         // sinif uygunsa key ve valuden'den istenen bolumleri yazdiririz
 
-        MapMethodDepo.numaraliSinifOgrenciListesiYazdir(ogrenciMap, "11");
+        MapMethodDepo.numaraliSinifOgrenciListesiYazdir(ogrenciMap,"11");
     }
 }

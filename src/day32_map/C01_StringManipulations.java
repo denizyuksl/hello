@@ -28,6 +28,7 @@ public class C01_StringManipulations {
 
     public static void isimSoyisimYazdir(String bilgi){
 
+
         String[] bilgilerArr = bilgi.split("-"); // [Ali Can, Yildiz, 10, K, Soz]
         System.out.println("Isim soyisim : " + bilgilerArr[0] + " " + bilgilerArr[1]);
     }

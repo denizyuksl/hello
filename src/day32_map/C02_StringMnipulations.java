@@ -19,7 +19,7 @@ public class C02_StringMnipulations {
         ogrenciList.add("Beytullah-Han-12-K-MF");
 
 
-        //isimSoyisimYazdir(ogrenciList,"esra");
+        isimSoyisimYazdir(ogrenciList,"esra");
 
         // sube'si verilen ogrencilerin isim ve soyisimlerini
         // yazdiran bir method olusturun
@@ -51,6 +51,8 @@ public class C02_StringMnipulations {
 
 
         for (int i = 0; i < ogrenciList.size(); i++) {
+
+
 
             ogrenciBilgi = ogrenciList.get(i); // "Beytullah-Yildiz-10-K-Soz"
             String[] bilgiler = ogrenciBilgi.split("-"); // [Beytullah, Yildiz, 10, K, Soz]

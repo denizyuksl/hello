@@ -11,7 +11,9 @@ public class C05_SoyisimdenOgrenciBulma {
 
         Map<Integer,String> ogrenciMap = MapMethodDepo.okulMapDondur();
 
-        MapMethodDepo.soyisimdenOgrenciBulma(ogrenciMap,"Can");
+        MapMethodDepo.soyisimdenOgrenciBulma(ogrenciMap,"Cem");
+
+        MapMethodDepo.subedenOgrenciBulma(ogrenciMap,"k");
 
 
     }

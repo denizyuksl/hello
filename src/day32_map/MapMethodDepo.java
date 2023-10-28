@@ -117,29 +117,6 @@ public class MapMethodDepo {
 
     }
 
-    public static void numaraliSinifOgrenciListesiYazdir(Map<Integer, String> ogrenciMap, String sinifNo) {
-        // numara, isim, soyisim ve subelerini yazdiran bir method olusturun
-        Set<Integer> keySeti = ogrenciMap.keySet(); //[101, 102, 103, 104, 105, 106, 107, 108, 109, 110]
-        String valueEach;
-        String[] valueArr;
-
-        System.out.println("======= Numarali " + sinifNo + ". sinif listesi ========");
-
-        for (Integer each : keySeti
-        ) { // each ==> key'leri getirecek 101
-
-            valueEach = ogrenciMap.get(each); // "Azim-Kayisi-11-K-TM"
-            valueArr = valueEach.split("-");
-
-            if (valueArr[2].equals(sinifNo)) {
-
-                System.out.println(each + " " + valueArr[0] + " " + valueArr[1] + " " + valueArr[3]);
-
-            }
-
-        }
-
-    }
 
     public static void numaraAraligindakiOgrenciListesi(Map<Integer, String> ogrenciMap, int baslangicNo, int bitisNo) {
 
@@ -363,4 +340,49 @@ public class MapMethodDepo {
 
         return ogrenciMap;
     }
-}
+// Ben yaptımmmm:))
+    public static void subedenOgrenciBulma(Map<Integer, String> ogrenciMap, String istenenSube) {
+        Collection<String> Valuesube =ogrenciMap.values();
+        String[] valueArr;
+
+        System.out.println("======="+ istenenSube +" subesi ögrenci listesi ===========");
+
+        for (String each:Valuesube
+
+             ) {valueArr=each.split("-");
+
+            if(valueArr[3].equalsIgnoreCase(istenenSube)){
+
+                System.out.println(valueArr[0]+" "+valueArr[1]+" "+valueArr[2]);
+            }
+
+        }
+    }
+
+    public static void numaraliSinifOgrenciListesiYazdir(Map<Integer, String> ogrenciMap, String sinifNo ){
+
+            // numara, isim, soyisim ve subelerini yazdiran bir method olusturun
+            Set<Integer> keySeti = ogrenciMap.keySet(); //[101, 102, 103, 104, 105, 106, 107, 108, 109, 110]
+            String valueEach;
+            String[] valueArr;
+
+            System.out.println("======= Numarali " + sinifNo + ". sinif listesi ========");
+
+            for (Integer each : keySeti
+            ) { // each ==> key'leri getirecek 101
+
+                valueEach = ogrenciMap.get(each); // "Azim-Kayisi-11-K-TM"
+                valueArr = valueEach.split("-");
+
+                if (valueArr[2].equals(sinifNo)) {
+
+                    System.out.println(each + " " + valueArr[0] + " " + valueArr[1] + " " + valueArr[3]);
+
+                }
+
+            }
+
+        }
+
+
+    }
