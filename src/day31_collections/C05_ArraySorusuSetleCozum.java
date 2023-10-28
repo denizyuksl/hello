@@ -40,7 +40,32 @@ public class C05_ArraySorusuSetleCozum {
 
         System.out.println("Array'in son hali : " + Arrays.toString(arr));
 
-            }
+        //iterator ile çözüm
+
+        // tekrarsiz elementleri saklayan Set olusturdum
+        //hashSet'le de yapabilirdik fark etmez
+        Set<Integer> tekrarsiz=new TreeSet<>();
+        // Arrayi set'e ekledim
+        for (int element : arr) {
+            tekrarsiz.add(element);
         }
+        //ıterator olusturdum
+        Iterator<Integer> iterator = tekrarsiz.iterator();
+        // Iterator kullanarak tekrarsız elemanları yazdirdim
+        while (iterator.hasNext()) {//yaninda eleman oldukca donguyu devam ettirdim
+            System.out.print(iterator.next()+" ");
+        }
+    }
+
+
+
+
+
+
+
+
+
+}
+
 
 
