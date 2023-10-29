@@ -177,6 +177,35 @@ public class MapMethodDepo {
         return ogrenciMap;
     }
 
+    public static Map<Integer, String> numaraIleIsimUpdate(Map<Integer, String> ogrenciMap, int ogrenciNo , String yeniIsim) {
+
+        String  ogrenciValue = ogrenciMap.get(ogrenciNo);
+
+        String[] ogrenciArr =ogrenciValue.split("-");
+
+        ogrenciArr[0]=yeniIsim;
+        String yeniValue=ogrenciArr[0] + "-" +
+                          ogrenciArr[1] + "-" +
+                          ogrenciArr[2] +"-" +
+                          ogrenciArr[3] +"-" +
+                          ogrenciArr[4];
+
+        ogrenciMap.put(ogrenciNo,yeniValue);
+
+
+
+        return ogrenciMap;
+    }
+
+
+
+
+
+
+
+
+
+
     public static Map<Integer, String> subedekiOgrencileriTasi(Map<Integer, String> ogrenciMap, String eskiSube, String yeniSube) {
 
         // Hangi ogrenci numarasinin subesi degisecek bilmedigimden
@@ -385,4 +414,5 @@ public class MapMethodDepo {
         }
 
 
-    }
+
+}
