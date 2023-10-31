@@ -199,13 +199,6 @@ public class MapMethodDepo {
 
 
 
-
-
-
-
-
-
-
     public static Map<Integer, String> subedekiOgrencileriTasi(Map<Integer, String> ogrenciMap, String eskiSube, String yeniSube) {
 
         // Hangi ogrenci numarasinin subesi degisecek bilmedigimden
@@ -245,6 +238,8 @@ public class MapMethodDepo {
     }
 
     public static Map<Integer, String> yilSonuSinifArtir(Map<Integer, String> ogrenciMap) {
+
+
 
         Set<Integer> keySeti = ogrenciMap.keySet();
         String[] valueArr;
@@ -303,6 +298,7 @@ public class MapMethodDepo {
             if (valueArr[2].equals(sinif) && valueArr[3].equalsIgnoreCase(sube)) {
 
                 System.out.println(eachEntry.getKey() + " " + valueArr[0] + " " + valueArr[1]);
+
             }
 
         }
@@ -388,31 +384,66 @@ public class MapMethodDepo {
         }
     }
 
-    public static void numaraliSinifOgrenciListesiYazdir(Map<Integer, String> ogrenciMap, String sinifNo ){
+    public static void numaraliSinifOgrenciListesiYazdir(Map<Integer, String> ogrenciMap, String sinifNo ) {
 
-            // numara, isim, soyisim ve subelerini yazdiran bir method olusturun
-            Set<Integer> keySeti = ogrenciMap.keySet(); //[101, 102, 103, 104, 105, 106, 107, 108, 109, 110]
-            String valueEach;
-            String[] valueArr;
+        // numara, isim, soyisim ve subelerini yazdiran bir method olusturun
+        Set<Integer> keySeti = ogrenciMap.keySet(); //[101, 102, 103, 104, 105, 106, 107, 108, 109, 110]
+        String valueEach;
+        String[] valueArr;
 
-            System.out.println("======= Numarali " + sinifNo + ". sinif listesi ========");
+        System.out.println("======= Numarali " + sinifNo + ". sinif listesi ========");
 
-            for (Integer each : keySeti
-            ) { // each ==> key'leri getirecek 101
+        for (Integer each : keySeti
+        ) { // each ==> key'leri getirecek 101
 
-                valueEach = ogrenciMap.get(each); // "Azim-Kayisi-11-K-TM"
-                valueArr = valueEach.split("-");
+            valueEach = ogrenciMap.get(each); // "Azim-Kayisi-11-K-TM"
+            valueArr = valueEach.split("-");
 
-                if (valueArr[2].equals(sinifNo)) {
+            if (valueArr[2].equals(sinifNo)) {
 
-                    System.out.println(each + " " + valueArr[0] + " " + valueArr[1] + " " + valueArr[3]);
-
-                }
+                System.out.println(each + " " + valueArr[0] + " " + valueArr[1] + " " + valueArr[3]);
 
             }
 
         }
 
+    }
+
+    public static Map<String, Object> rezervasyonOlustur(String firstname, String lastname, int totalprice,
+                                                         boolean depositpaid, String checkin,
+                                                         String checkout, String additionalneeds) {
+    /*
+
+         {
+            "firstname" : "Ahmet",
+            "lastname" : "Bulut",
+            "totalprice" : 500,
+            "depositpaid" : false,
+            "bookingdates" : {
+                   "checkin" : "2023-07-21",
+                   "checkout" : "2023-08-10"
+                      },
+            "additionalneeds" : "wi-fi" }
+
+         */
+
+        Map<String, Object> rezervasyonMap = new HashMap<>();
+
+        rezervasyonMap.put("firstname",firstname);
+        rezervasyonMap.put("lastname",lastname);
+        rezervasyonMap.put("totalprice",totalprice);
+        rezervasyonMap.put("depositpaid",depositpaid);
 
 
+        Map<String,String> innerMap = new HashMap<>();
+        innerMap.put("checkin",checkin);
+        innerMap.put("checkout",checkout);
+
+        rezervasyonMap.put("bookingdates",innerMap);
+        rezervasyonMap.put("additionalneeds",additionalneeds);
+
+        return rezervasyonMap;
+
+
+    }
 }
