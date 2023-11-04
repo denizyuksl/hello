@@ -446,4 +446,22 @@ public class MapMethodDepo {
 
 
     }
+
+
+    public static void isimdenSubeBulma(Map<Integer, String> ogrenciMap, String verilenIsim) {
+
+       // öğrenci map inde istenen isimdeki öğrencilerin, soyisim ve subelerini yazdiran bir method oluşturun.
+
+        Collection<String> ogrenci =ogrenciMap.values();
+
+        String[]ogrenciArr;
+        System.out.println("******* " +verilenIsim+ " ismindeki ogrenci listesi ********");
+        for (String eleman:ogrenci
+             ) {
+            ogrenciArr=eleman.split("-");
+            if (ogrenciArr[0].equalsIgnoreCase(verilenIsim)){
+                System.out.println( ogrenciArr[0]+" "+ ogrenciArr[1]+ " "+ogrenciArr[3]);
+            }
+        }
+    }
 }

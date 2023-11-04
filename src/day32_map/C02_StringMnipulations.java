@@ -26,8 +26,8 @@ public class C02_StringMnipulations {
 
         subeListesiYazdir(ogrenciList, "M");
 
-    }
 
+    }
 
     public static void subeListesiYazdir(List<String> ogrenciList, String istenenSube) {
 

@@ -8,6 +8,7 @@ public class C01_StringManipulations {
         // isim-soyisim-sinif-sube-bolum
         // bu formatta verilen bilgiden, subeyi yazdiran bir method olusturun
 
+
         String bilgi = "Ali Can-Yildiz-10-K-Soz";
 
         subeYazdir(bilgi); // K
