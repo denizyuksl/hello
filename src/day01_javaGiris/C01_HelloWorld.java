@@ -5,5 +5,6 @@ public class C01_HelloWorld {
         System.out.println("Java'da ilk kodumuz hayırlı olsun ");
 
         System.out.println("Teşekkürler");
+        System.out.println("Rica ederim:)");
     }
 }
